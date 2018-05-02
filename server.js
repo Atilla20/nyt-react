@@ -27,6 +27,11 @@ mongoose.connect(db, function(error) {
     }
 });
 
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI, {
+  useMongoClient: true
+});
+
 //'Access-Control-Allow-Origin' Allows access to the requested resource
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')
