@@ -16,5 +16,5 @@
     "eject": "react-scripts eject"
   },
 
-  "main": "Main.js"
+  "main": "App.js"
 }
