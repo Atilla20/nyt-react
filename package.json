@@ -12,9 +12,12 @@
   },
 
   "scripts": {
-    "start": "node server.js",
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "npm run client",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "server.js"
 }
