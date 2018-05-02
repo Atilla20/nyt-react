@@ -12,16 +12,16 @@ const api = {
       //gets articles that are saved
 
       getArticle: function() {
-          return axios.get("/api/saved")
+          return axios.get("/api/searched")
       },
 
       //Sends searched articles to the db
       searchedArticle: function(articleObj) {
-          return axios.post("/api/saved", articleObj);
+          return axios.post("/api/searched", articleObj);
       },
 
       deleteArticle: function(id) {
-          return axios.delete(`/api/saved/${id}`);
+          return axios.delete(`/api/searched/${id}`);
       }
     };
 
